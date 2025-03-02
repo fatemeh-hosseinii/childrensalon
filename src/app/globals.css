@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../../public/assets/fonts/vazir.ttf') format('truetype');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.main{
+  width: 95%;
+  margin: auto;
+}
+
+body {
+  background: white;
+  font-family: 'vazir';
+  direction: rtl;
+}
+.box-shadow{
+  box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+}
+/* pajination */
+.swiper-pagination-bullet {
+  background-color: #fffaf8 !important; 
+  border: 1px solid rgb(34, 33, 33);
+  width: 7px !important;
+  height: 7px !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important; 
+}
+.swiper-pagination {
+  position: static !important;
+  margin-top: 20px !important;
+  padding: 10px !important;
+  text-align: center;
+  transition: opacity .3s;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
