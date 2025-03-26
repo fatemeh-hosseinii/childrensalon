@@ -8,19 +8,46 @@ import Filter from '@/components/filter/Filter';
 
 
 function page() {
-    
-    
+    const arr = [
+        {
+            id: 1,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp",
+
+        },
+        {
+            id: 2,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
+        },
+        {
+            id:3,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
+        },
+        {
+            id:4,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
+        },
+        {
+            id:5,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
+        },
+        {
+            id:6,
+            img:"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
+        }
+
+    ];
+    const products = [1, 2, 3, 4, 5, 6, 7, 8,1, 2, 3, 4, 5, 6, 7, 8];
     return (
-        <div className='container my-5'>
+        <div className='container my-5 '>
             <p className='font-black  text-2xl text-center'>لباس های دخترانه طرح دار </p>
             <p className='text-center text-zinc-500 text-sm mt-5 px-5'>
                 فرقی نمی‌کند به دنبال یک لباس مهمانی، لباس‌های هوشمند برای مدرسه یا چیزی راحت برای آخر هفته باشید، جدیدترین لباس‌های دخترانه طراحان را کشف کنید.
             </p>
 
             <div className=' w-full xl:w-3/4 px-5 lg:px-0 m-auto grid grid-cols-6 gap-5 mt-10'>
-                {arr.map((_, index) => (
+                {arr.map((item, index) => (
                     <Link href="/" key={index} className='col-span-3 md:col-span-2 lg:col-span-1'>
-                        <img className='w-full rounded' src="https://cdn.childrensalon.com/media/cms/cache/156x208/f/2/f2541076-543349-1-copy-a2tkj106nmgcgwoc0w40osc4o.webp" alt="" />
+                        <img className='w-full rounded' src={item.img} alt="" />
                         <p className='text-center  font-black text-sm mt-3'>نام برند  </p>
                     </Link>))}
             </div>

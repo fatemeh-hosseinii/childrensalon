@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import * as Icon from "react-icons/ci";
 interface MenuItem {
   id: number;
   title: string;
+  link:string;
 }
 
 interface NavbarMenuType {
@@ -11,45 +13,57 @@ interface NavbarMenuType {
 }
 
 const NavbarMenu: React.FC = () => {
+  const pathname=usePathname()
   const navbarMenu: NavbarMenuType = {
     Menu: [
       {
+        link:"/store",
         id: 1,
         title: "جدیدترین محصولات",
+        
       },
       {
+        link:"",
         id: 2,
         title: "کودک",
       },
       {
+        link:"",
         id: 3,
         title: "دختر",
       },
       {
+        link:"",
         id: 4,
         title: "پسر",
       },
       {
+        link:"",
         id: 5,
         title: "کفش",
       },
       {
+        link:"",
         id: 6,
         title: "برندها",
       },
       {
+        link:"",
         id: 7,
         title: "بازدید از شعبه‌ها",
       },
       {
+        link:"",
         id: 8,
         title: "مراسم ها",
       },
       {
+        link:"",
         id: 9,
         title: "فروش ویژه",
       },
       {
+        link:"",
         id: 10,
         title: "برندها",
       },
@@ -78,7 +92,7 @@ const NavbarMenu: React.FC = () => {
                         key={item.id}
                         className=" p-2 xl:h-[6vh] hover:text-[#858581] hover:border-b-4 hover:border-[#0b0b09] flex lg:hidden"
                     >
-                        <Link href="" className="block text-[12px]">
+                        <Link href={item.link} className={`block text-[12px] ${pathname===item.link ?"hover:border-b-4 hover:border-[#0b0b09]": ""} `}>
                             {item.title}
                         </Link>
                     </li>
@@ -90,7 +104,7 @@ const NavbarMenu: React.FC = () => {
                         key={item.id}
                         className=" p-2 xl:h-[6vh] hover:text-[#858581] hover:border-b-4 hover:border-[#0b0b09] hidden lg:flex"
                     >
-                        <Link href="" className="block text-[12px] xl:text-[14px]">
+                        <Link href={item.link}  className={`block text-[12px] xl:text-[14px] ${pathname===item.link ?"text-[#858581]": ""} `}>
                             {item.title}
                         </Link>
                     </li>
