@@ -1,66 +1,168 @@
 {
-    "category":[
-      
-            {
-              "id": 1,
-              "title": "فروشگاه کفش",
-              "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-4-49bf7n7ekrc4cooo00osow4cw.webp",
-              "link":"/store/storeshoes",
-               "categoryshoes" : [
-                {
-                    "categorybrand" : [
-                
-                        { 
-                            
-                            "id": 1,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp"
-                
-                        },
-                        {
-                            "id": 2,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
-                        },
-                        {
-                            "id":3,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
-                        },
-                        {
-                            "id":4,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
-                        },
-                        {
-                            "id":5,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
-                        },
-                        {
-                            "id":6,
-                            "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
-                        }
-                
-                    ]
-                      
-                }
-            ]
+  "category":[
+    
+          {
+            "id": 1,
+            "title": "فروشگاه کفش",
+            "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-4-49bf7n7ekrc4cooo00osow4cw.webp",
+            "slug":"storeshoes",
+             "categoryshoes" : [
+            
+                      { 
+                          
+                          "id": 1,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp"
               
-            },
-            {
-              "id": 2,
-              "title": "فروشگاه پسرانه",
-              "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-4-49bf7n7ekrc4cooo00osow4cw.webp",
-              "link":""
-            },
-            {
-              "id": 3,
-              "link":"",
-              "title": "فروشگاه دخترانه",
-              "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-2-2og2ulvbo18gck48cggws408o-9iudp0r95z40wos48808804oo.webp"
-            },
-            {
-              "id": 4,
-              "link":"",
-              "title": "فروشگاه نوزاد",
-              "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-1-4qw62496igw00gs48kok4gw8g.webp"
-            }
-        
-    ]
+                      },
+                      {
+                          "id": 2,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
+                      },
+                      {
+                          "id":3,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
+                      },
+                      {
+                          "id":4,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
+                      },
+                      {
+                          "id":5,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
+                      },
+                      {
+                          "id":6,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
+                      }
+              
+            ]
+                    
+            
+          },
+          {
+            "id": 2,
+            "title": "فروشگاه پسرانه",
+            "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-4-49bf7n7ekrc4cooo00osow4cw.webp",
+            "slug":"storeboyes",
+
+            "categoryboyes" : [
+            
+              
+                      { 
+                          
+                          "id": 1,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp"
+              
+                      },
+                      {
+                          "id": 2,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
+                      },
+                      {
+                          "id":3,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
+                      },
+                      {
+                          "id":4,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
+                      },
+                      {
+                          "id":5,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
+                      },
+                      {
+                          "id":6,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
+                      }
+              
+                  ]
+                    
+              
+       
+
+          },
+          {
+            "id": 3,
+            "link":"storegirls",
+            "title": "فروشگاه دخترانه",
+            "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-2-2og2ulvbo18gck48cggws408o-9iudp0r95z40wos48808804oo.webp",
+            "categorygirls" : [
+           
+              
+                      { 
+                          
+                          "id": 1,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp"
+              
+                      },
+                      {
+                          "id": 2,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
+                      },
+                      {
+                          "id":3,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
+                      },
+                      {
+                          "id":4,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
+                      },
+                      {
+                          "id":5,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
+                      },
+                      {
+                          "id":6,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
+                      }
+              
+                  ]
+                    
+            
+          
+
+          },
+          {
+            "id": 4,
+            "slug":"storebabies",
+            "title": "فروشگاه نوزاد",
+            "image": "https://cdn.childrensalon.com/media/cms/cache/310x310/c/a/category-block-1-4qw62496igw00gs48kok4gw8g.webp",
+            "categorybabies" : [
+            
+              
+                      { 
+                          
+                          "id": 1,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/e/sevva-1d1520ufj1xc8w840wo8oosog.webp"
+              
+                      },
+                      {
+                          "id": 2,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/mayoral-16pvr14opitc800gc84wwgocg.webp"
+                      },
+                      {
+                          "id":3,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/s/w/sw-9s2gxs3b4c0sccgw8g8o8g80o.webp"
+                      },
+                      {
+                          "id":4,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/m/a/manuela-dqfhkf7f6l4cowgkc0sggc0s0.webp"
+                      },
+                      {
+                          "id":5,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/c/c/cc-1onizvxd4om8o4skk08wo4wk8.webp"
+                      },
+                      {
+                          "id":6,
+                          "img":"https://cdn.childrensalon.com/media/cms/cache/120x160/v/e/veja-d0o3uhlsxtwkk8gccw08scgos.webp"
+                      }
+              
+                  
+          ]
+
+          }
+      
+  ]
 }
+
+
