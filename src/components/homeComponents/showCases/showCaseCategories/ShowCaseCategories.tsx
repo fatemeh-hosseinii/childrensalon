@@ -1,31 +1,21 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Container from "@/components/container/Container";
-import Link from "next/link";
-import axios from "axios";
 
-interface Category {
+import Container from "@/components/container/Container";
+import axios from "axios";
+import Link from "next/link";
+
+
+ export interface Category {
   id: number;
   title: string;
   image: string;
   slug: string;
 }
 
-const ShowCaseCategories: React.FC = () => {
-  const [data, setData] = useState<Category[]>([]); // مقدار اولیه قرار داده شد
+const ShowCaseCategories: React.FC = async() => {
+    const res = await axios.get("http://localhost:3004/category"); // `await` اضافه شد
+    const data =await res.data as Category[]; // `as` اضافه شد
+   
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get("http://localhost:3004/category"); // `await` اضافه شد
-        setData(res.data); // ذخیره داده در state
-      } catch (error) {
-        console.error("خطا در بارگذاری داده‌ها: ", error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <Container>
@@ -33,7 +23,7 @@ const ShowCaseCategories: React.FC = () => {
         <ul className="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center mt-3 gap-3">
           {data.map((category) => (
             <li key={category.id} className="flex flex-col items-center">
-              <Link href={`/ctegory/${category.id}`}  className="hover:text-gray-500">
+              <Link href={`/ctegory/${category.slug}`}  className="hover:text-gray-500">
                 <img className="w-full object-cover" src={category.image} alt={category.title} />
                 <p className="text-center mt-3">{category.title}</p>
               </Link>
